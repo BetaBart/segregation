@@ -1,5 +1,5 @@
 export function showSorterGame() {
-    document.querySelector('script').src = './sorter.js';
+    document.querySelector('script').src = './src/sorter.js';
 
     const styles = document.querySelector('link');
     styles.href = '../style/sorter.css';
