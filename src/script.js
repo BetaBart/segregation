@@ -12,7 +12,7 @@ h1.classList.add('heading');
 h1.textContent = 'Segregation Game';
 const pRules = document.createElement('p');
 pRules.classList.add('rules');
-pRules.textContent = 'lorem ipsum dolor sit, amet consectetur adipisicing elit Rem nobis dolor excepturi fuga tempore ipsa quia corporis possimus repellendus explicabo nulla fugiat nemo cum modi nam atque consequuntur, blanditiis vero';
+pRules.innerHTML = 'Please use the <b>LEFT</b> and <b>RIGHT</b> to move across the board. <br> Pressing <b>DOWN</b> will speed up the trash.';
 const btnStart = document.createElement('button');
 btnStart.classList.add('btn');
 btnStart.classList.add('start-game');
