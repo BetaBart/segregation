@@ -2,7 +2,7 @@ export function showSorterGame() {
     document.querySelector('script').src = './src/sorter.js';
 
     const styles = document.querySelector('link');
-    styles.href = '../style/sorter.css';
+    styles.href = './style/sorter.css';
 
     document.querySelector('.container').innerHTML = '';
 
