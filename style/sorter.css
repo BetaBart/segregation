@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif; 
+}
+
+.container {
+    margin: 0 auto;
+    width: 100%;
+    height: 100vh;
+
+    display: grid;
+    grid-template-columns: 74% 20%;
+    justify-content: space-between;
+    align-items: center;
+
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(8, 1fr) 2fr;
+    width: 100%;
+    height: 80%;
+    padding: 0 10px;
+}
+
+.game-over {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    position: absolute;
+
+    width: 100%;
+    height: 100vh;
+    background-image: url('../img-sorter/matthew-henry-2Ts5HnA67k8-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    top: -100%;
+    transition: top 0.5s;
+
+    color: rgb(184 182 203);
+}
+
+.game-over::before {
+    content: 'Photo by @matthewhenry Unsplash';
+
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+.game-over.active {
+  top: 0;
+}
+
+h2 {
+  margin: 10px;
+}
+
+.cell {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.score {
+    background: linear-gradient(318deg, rgb(136 132 171) 0%, rgb(184 182 203) 80%);
+    text-align: center;
+
+    padding: 20px;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.score.hidden {
+  display: none;
+}
+
+.score.gameOver {
+  position: absolute;
+  width: 80%;
+}
+
+.game-over__score {
+  align-items: center;
+}
+
+.game-over__score_value {
+  font-size: 70px;
+  text-align: center;
+}
+
+.score_current {
+  font-size: 70px;
+}
+
+.lives_current {
+  font-size: 30px;
+}
